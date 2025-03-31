@@ -52,5 +52,5 @@ for trial_id in range(NUM_TRIALS):
         CM[dist_name][row_number, col_number] += 1
 
 for dist_name, cm in CM.items():
-    print(f"{dist_name}:")
+    print(f"\nConfusion matrix for {dist_name} after {NUM_TRIALS} trials:")
     print(cm / NUM_TRIALS)
